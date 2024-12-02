@@ -1,18 +1,24 @@
 import type { Configuration } from 'webpack';
+import type IForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
+const ForkTsCheckerWebpackPlugin: typeof IForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 import { rules } from './webpack.rules';
-import { plugins } from './webpack.plugins';
-
-rules.push({
-  test: /\.css$/,
-  use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
-});
 
 export const rendererConfig: Configuration = {
   module: {
-    rules,
+    rules: [
+      ...rules,
+      {
+        test: /\.css$/,
+        use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
+      },
+    ],
   },
-  plugins,
+  plugins: [
+    new ForkTsCheckerWebpackPlugin({
+      logger: 'webpack-infrastructure',
+    }),
+  ],
   resolve: {
     extensions: ['.js', '.ts', '.jsx', '.tsx', '.css'],
   },
