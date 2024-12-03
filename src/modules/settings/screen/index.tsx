@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Settings.css';
+import './styles.css';
 
 const Settings: React.FC = () => {
   const [settings, setSettings] = useState({

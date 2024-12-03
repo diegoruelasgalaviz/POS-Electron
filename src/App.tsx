@@ -1,15 +1,9 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Settings from './components/Settings';
+import Settings from './modules/settings/screen';
+import Home from './modules/home/screen';
 import './App.css';
-
-const Home: React.FC = () => (
-  <div className="home">
-    <h2>Welcome to POS System</h2>
-    <p>Select an option from the navigation menu to get started.</p>
-  </div>
-);
 
 const App: React.FC = () => {
   return (

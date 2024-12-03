@@ -1,0 +1,26 @@
+.stat-card {
+  padding: 20px;
+}
+
+.stat-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat-info {
+  flex-grow: 1;
+}
+
+.stat-icon {
+  font-size: 40px !important;
+  color: #1a237e;
+  opacity: 0.7;
+}
+
+.increase {
+  color: #4caf50;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+} 
