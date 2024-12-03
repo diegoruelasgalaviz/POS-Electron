@@ -1,0 +1,9 @@
+.user-management-screen {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.user-management-screen h2 {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+} 

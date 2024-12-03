@@ -1,13 +1,24 @@
 import React from 'react';
-import Dashboard from '../components/dashboard';
 import './styles.css';
 
 const Home: React.FC = () => {
   return (
     <div className="home">
-      <div>Test text to see what we are writing</div>
-      {/* Dashboard component temporarily disabled - Under Diego's development */}
-      {/* <Dashboard /> */}
+      <h1>Welcome to POS System</h1>
+      <div className="dashboard-summary">
+        <div className="summary-card">
+          <h3>Today's Sales</h3>
+          <p className="amount">$1,234.56</p>
+        </div>
+        <div className="summary-card">
+          <h3>Total Orders</h3>
+          <p className="amount">48</p>
+        </div>
+        <div className="summary-card">
+          <h3>Active Items</h3>
+          <p className="amount">156</p>
+        </div>
+      </div>
     </div>
   );
 };

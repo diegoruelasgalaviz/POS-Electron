@@ -1,0 +1,41 @@
+.settings-layout {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.settings-nav {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e1e8ed;
+  padding-bottom: 1rem;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: #718096;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 4px;
+}
+
+.nav-button:hover {
+  color: #2c5282;
+  background-color: #ebf8ff;
+}
+
+.nav-button.active {
+  color: #2b6cb0;
+  font-weight: 600;
+  background-color: #ebf8ff;
+}
+
+.settings-content {
+  flex: 1;
+} 
