@@ -1,0 +1,94 @@
+.account-management {
+  margin-bottom: 3rem;
+}
+
+.account-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.account-group {
+  margin-bottom: 1.5rem;
+}
+
+.account-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.input-group {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.input-group .text-input {
+  flex: 1;
+}
+
+.text-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+.text-input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.profile-picture-container {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #3498db;
+}
+
+.profile-picture-input {
+  display: none;
+}
+
+.profile-picture-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-picture-label,
+.update-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #3498db;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border: none;
+  font-size: 0.9rem;
+}
+
+.profile-picture-label:hover,
+.update-button:hover {
+  background-color: #2980b9;
+}
+
+.update-button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+} 

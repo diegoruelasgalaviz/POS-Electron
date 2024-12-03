@@ -40,18 +40,7 @@
     margin-right: 0.5rem;
   }
   
-  .input-group {
-    display: flex;
-    gap: 1rem;
-    align-items: flex-start;
-  }
-  
-  .input-group .text-input {
-    flex: 1;
-  }
-  
-  .settings-group select,
-  .settings-group .text-input {
+  .settings-group select {
     width: 100%;
     padding: 0.5rem;
     border: 1px solid #ddd;
@@ -60,57 +49,8 @@
     color: #2c3e50;
   }
   
-  .settings-group select:focus,
-  .settings-group .text-input:focus {
+  .settings-group select:focus {
     outline: none;
     border-color: #3498db;
     box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
-  }
-  
-  .profile-picture-container {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
-  .profile-picture {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1rem;
-    border: 3px solid #3498db;
-  }
-  
-  .profile-picture-input {
-    display: none;
-  }
-  
-  .profile-picture-actions {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .profile-picture-label,
-  .update-button {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: #3498db;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-    border: none;
-    font-size: 0.9rem;
-  }
-  
-  .profile-picture-label:hover,
-  .update-button:hover {
-    background-color: #2980b9;
-  }
-  
-  .update-button:disabled {
-    background-color: #bdc3c7;
-    cursor: not-allowed;
   } 
