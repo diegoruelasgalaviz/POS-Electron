@@ -1,0 +1,193 @@
+.inventory-screen {
+  padding: 20px;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+}
+
+.inventory-header {
+  margin-bottom: 20px;
+}
+
+.inventory-header h2 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.inventory-controls {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 300px;
+  font-size: 14px;
+}
+
+.category-filter select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: white;
+  min-width: 150px;
+}
+
+.add-item-btn {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: auto;
+}
+
+.add-item-btn:hover {
+  background-color: #45a049;
+}
+
+.inventory-table-container {
+  flex: 1;
+  overflow: auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.inventory-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1200px;
+}
+
+.inventory-table th {
+  background-color: #f8f9fa;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #2c3e50;
+  border-bottom: 2px solid #dee2e6;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.inventory-table th:hover {
+  background-color: #e9ecef;
+}
+
+.inventory-table td {
+  padding: 12px;
+  border-bottom: 1px solid #dee2e6;
+  color: #2c3e50;
+}
+
+.inventory-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.low-stock {
+  background-color: #fff3f3;
+}
+
+.low-stock:hover {
+  background-color: #ffe9e9 !important;
+}
+
+.stock-status {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.stock-status.low {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.stock-status.medium {
+  background-color: #fff3e0;
+  color: #ef6c00;
+}
+
+.stock-status.good {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.edit-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #2980b9;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.inventory-footer {
+  margin-top: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.inventory-summary {
+  display: flex;
+  gap: 20px;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .inventory-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-box input,
+  .category-filter select {
+    width: 100%;
+  }
+
+  .add-item-btn {
+    margin-left: 0;
+    width: 100%;
+  }
+} 
